@@ -30,4 +30,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          aws --region=eu-north-1 s3 sync . s3://calc-i-tutorial1 --delete --exclude '.git*'
+          aws --region=eu-north-1 s3 sync . s3://i-calc-masterclass1 --delete --exclude '.git*'
