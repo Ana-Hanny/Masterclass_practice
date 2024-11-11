@@ -32,7 +32,7 @@ jobs:
       - name: Serve static site
         run: |
           npm install --global serve
-          npx serve
+          npx serve &
       - name: Run Playwright tests
         run: npx playwright test
       - uses: actions/upload-artifact@v4
